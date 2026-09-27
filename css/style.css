@@ -1,0 +1,14 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.mywidth {
+  width: 50%;
+}
+.myCardStyle {
+  transition: 0.3s ease-in-out;
+}
+.myCardStyle:hover {
+  transform: translateY(-10px);
+}
