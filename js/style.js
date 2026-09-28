@@ -10,7 +10,7 @@ btn.addEventListener("click", () => {
 
 function showProducts() {
   fetch("https://dummyjson.com/products")
-    .then((response) => response.json())
+    .then((resp) => resp.json())
     .then((data) => {
       products.innerHTML = "";
 
@@ -38,7 +38,7 @@ function showProducts() {
 
       loadingMessage();
     })
-    .catch(function (error) {
+    .catch((error) => {
       console.log(error);
       loadingMessage();
     });
