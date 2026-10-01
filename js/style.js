@@ -1,6 +1,7 @@
 const btn = document.querySelector(".myBtn");
 const loading = document.querySelector(".loading");
 const products = document.querySelector(".products");
+const erorrMassege = document.querySelector(".erorrMassege");
 
 btn.addEventListener("click", () => {
   loading.classList.remove("d-none");
@@ -40,6 +41,11 @@ function showProducts() {
     })
     .catch((error) => {
       console.log(error);
+      erorrMassege.innerHTML = `
+    <h3 class="text-danger text-center">
+      Something went wrong. Please try again.
+    </h3>
+  `;
       loadingMessage();
     });
 }
